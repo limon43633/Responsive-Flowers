@@ -55,6 +55,54 @@
 }
 
 
+
+  /* nav section done */
+
+
+  
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 200px;
+    
+}
+
+.banner-content{
+    flex: 1;
+    max-width: 50%;
+
+}
+
+.banner-title{
+    font-family: 'Noto serif', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+
+.always{
+    font-weight: 700;
+    color: #000000;
+}
+.ff{
+    font-weight: 700;
+    color: #E95A08;
+}
+
+p{
+    color: #00000080;
+    
+}
+
+.image-box{
+
+}
+
+
 @media (max-width: 768px) {
     .navbar {
       flex-direction: row;
@@ -86,12 +134,44 @@
     .nav-links a {
       font-size: 18px;
     }
+
+    .banner{
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+
+    }
+
+    .image-box{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .image-box img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+      }
+
+
+    .banner-content{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .banner-title{
+        font-size: 26px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+
+    }
+    
+    p {
+        font-size: 14.5px;
+        line-height: 1.6;
+        max-width: 95%;
+        margin: 0 auto;
+        color: #777;
+      }
+
+      
   }
-
-  /* nav section done */
-
-
-
-
-
-  
