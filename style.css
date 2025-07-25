@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     box-sizing: border-box;
     
 }
@@ -150,7 +150,7 @@ p{
 
     object-fit: cover;
     margin: 30px 0px;
-   /* margin-bottom: 15px;*/
+   
 }
 
 .card h3{
@@ -177,8 +177,68 @@ p{
     
 }
 
+/* plant section done */
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+   
+  }
 
+  .section-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 500px auto 0 300px;
+  }
+
+  .image-container {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .main-image {
+    width: 100%;
+    
+  }
+
+  .badge {
+    position: absolute;
+    top: -70px;
+    right: -60px;
+    width: 170px;
+    height: auto;
+  }
+
+  .content {
+    flex: 1.5;
+    padding-left: 30px;
+  }
+
+  .content h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 8px ;
+
+  }
+
+  .content ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    color: #555;
+  }
+
+  .content ul li {
+    margin-bottom: 15px;
+    line-height: 1.1 ;
+  }
+
+  /*plant lover section done*/
 
 @media (max-width: 768px) {
     .navbar {
@@ -259,5 +319,43 @@ p{
         margin:  5px 0;
 
       }
+
+      .section-container {
+        margin: 750px 15px 0 15px; 
+        padding: 20px 15px;
+        flex-direction: column;
+      }
+    
+      .image-container {
+        max-width: 100%;
+      }
+    
+      .badge {
+        display: none;
+      }
+    
+      .content {
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
+      }
+    
+      .content h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+    
+      .content ul {
+        padding-left: 20px;
+        text-align: left;
+        margin: 0 auto;
+      }
+    
+      .content ul li {
+        margin-bottom: 12px;
+        line-height: 1.6;
+      }
+    
+
       
   }
