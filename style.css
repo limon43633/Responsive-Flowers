@@ -267,6 +267,85 @@ body {
 /* Latest deals section done */
 
 
+.promo-section{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    flex: 1;
+    min-width: 280px;
+
+}
+
+.promo-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 206px;
+    width: 366px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .promo-card .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .promo-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .promo-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .promo-card a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .right-column {
+    flex: 2;
+    min-width: 300px;
+  }
+
+
+
+  .card-1st-col{
+    margin-left: 182px;
+    width: 360px;
+    height: 190px;
+
+  }
+
+  .right-card {
+    height: 400px;
+    width: 685px;
+    margin-right: 182px;
+  } 
+
+
+  /* Image layout section done */
+
 
 
 
@@ -399,5 +478,22 @@ body {
       .latest-deals p {
         font-size: 0.95rem;
       }
-      
+
+      .promo-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .promo-card {
+        width: 90%;
+        height: 220px;
+        margin-bottom: 20px;
+      }
+    
+      .right-card {
+        width: 90% !important;
+        height: 220px !important;
+        margin-bottom: 20px;
+      }
+
   }
